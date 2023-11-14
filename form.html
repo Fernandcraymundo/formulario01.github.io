@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--get: (maximo é 3mil letras, fotos,senhas,dados do cartão de credito) quando os dados não for privado... post:quando os dados for privado para não aparecer na url, envio de arquivos...autocomplete="off" para desligar a caixa de sujestao.. . action="cadastro.php" uma ação pra qual banco de dados que vai eu coloqui PHP-->
+        <p><label for="inome" >Nome:</label> <!--para enviar dados é necessario que todo objeto de entrada tenha name=""-->
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobre Nome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
+    
+</body>
+</html>
